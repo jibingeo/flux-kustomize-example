@@ -1,0 +1,27 @@
+---
+# Source: kubedb-catalog/templates/redis-psp.yaml
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: redis-db
+  labels:
+    chart: "kubedb-catalog-0.12.0"
+    app: "kubedb-catalog"
+    release: "RELEASE-NAME"
+    heritage: "Helm"
+spec:
+  privileged: false
+  allowPrivilegeEscalation: false
+  volumes:
+  - "*"
+  hostNetwork: false
+  hostIPC: false
+  hostPID: false
+  runAsUser:
+    rule: RunAsAny
+  seLinux:
+    rule: RunAsAny
+  supplementalGroups:
+    rule: RunAsAny
+  fsGroup:
+    rule: RunAsAny
