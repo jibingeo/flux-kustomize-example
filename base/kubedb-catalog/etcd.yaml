@@ -6,8 +6,8 @@ metadata:
   name: "3.2.13"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "3.2.13"

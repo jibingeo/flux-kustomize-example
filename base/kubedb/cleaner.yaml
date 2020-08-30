@@ -3,11 +3,11 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: RELEASE-NAME-cleaner
+  name: kubedb-cleaner
   labels:
     chart: "kubedb-0.12.0"
     app: "kubedb"
-    release: "RELEASE-NAME"
+    release: "kubedb"
     heritage: "Helm"
   annotations:
     "helm.sh/hook": pre-delete
@@ -17,7 +17,7 @@ spec:
   activeDeadlineSeconds: 120
   template:
     spec:
-      serviceAccountName: RELEASE-NAME-kubedb
+      serviceAccountName: kubedb
       containers:
       - name: busybox
         image: appscode/kubectl:v1.12

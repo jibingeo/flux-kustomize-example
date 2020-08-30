@@ -8,7 +8,7 @@ metadata:
   labels:
     chart: "kubedb-0.12.0"
     app: "kubedb"
-    release: "RELEASE-NAME"
+    release: "kubedb"
     heritage: "Helm"
   annotations:
     "helm.sh/hook": post-install,post-upgrade

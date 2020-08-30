@@ -3,11 +3,11 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: RELEASE-NAME-kubedb
+  name: kubedb
   labels:
     chart: "kubedb-0.12.0"
     app: "kubedb"
-    release: "RELEASE-NAME"
+    release: "kubedb"
     heritage: "Helm"
 rules:
 - apiGroups:
@@ -117,7 +117,7 @@ rules:
   - podsecuritypolicies
   verbs: ["use"]
   resourceNames:
-  - RELEASE-NAME-kubedb
+  - kubedb
   - elasticsearch-db
   - etcd-db
   - memcached-db

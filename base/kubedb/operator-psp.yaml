@@ -3,11 +3,11 @@
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
-  name: RELEASE-NAME-kubedb
+  name: kubedb
   labels:
     chart: "kubedb-0.12.0"
     app: "kubedb"
-    release: "RELEASE-NAME"
+    release: "kubedb"
     heritage: "Helm"
 spec:
   privileged: true  #Allowing privileged pods is necessary for ES db

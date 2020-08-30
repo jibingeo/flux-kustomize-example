@@ -6,8 +6,8 @@ metadata:
   name: "5.6"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   deprecated: true
@@ -32,8 +32,8 @@ metadata:
   name: "5.6-v1"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "5.6"
@@ -56,8 +56,8 @@ metadata:
   name: "5.6.4"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   deprecated: true
@@ -81,8 +81,8 @@ metadata:
   name: "5.6.4-v1"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "5.6.4"
@@ -105,8 +105,8 @@ metadata:
   name: "6.2.4"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   deprecated: true
@@ -130,8 +130,8 @@ metadata:
   name: "6.2.4-v1"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.2.4"
@@ -154,8 +154,8 @@ metadata:
   name: "6.2"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   deprecated: true
@@ -179,8 +179,8 @@ metadata:
   name: "6.2-v1"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.2"
@@ -203,8 +203,8 @@ metadata:
   name: "6.3.0"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   deprecated: true
@@ -228,8 +228,8 @@ metadata:
   name: "6.3.0-v1"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.3.0"
@@ -252,8 +252,8 @@ metadata:
   name: "6.3"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   deprecated: true
@@ -277,8 +277,8 @@ metadata:
   name: "6.3-v1"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.3"
@@ -301,8 +301,8 @@ metadata:
   name: "6.4.0"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.4.0"
@@ -325,8 +325,8 @@ metadata:
   name: "6.4"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.4"
@@ -349,8 +349,8 @@ metadata:
   name: "6.5.3"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.5.3"
@@ -373,8 +373,8 @@ metadata:
   name: "6.5"
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   version: "6.5.3"

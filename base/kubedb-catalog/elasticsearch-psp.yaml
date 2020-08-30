@@ -6,8 +6,8 @@ metadata:
   name: elasticsearch-db
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   privileged: true  #Allowing privileged pods is necessary for ES db only!
@@ -36,8 +36,8 @@ metadata:
   name: elasticsearch-snapshot
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   privileged: false

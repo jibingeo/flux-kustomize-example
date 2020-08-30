@@ -6,8 +6,8 @@ metadata:
   name: mongodb-db
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec:
   privileged: false
@@ -33,8 +33,8 @@ metadata:
   name: mongodb-snapshot
   labels:
     chart: "kubedb-catalog-0.12.0"
-    app: "kubedb-catalog"
-    release: "RELEASE-NAME"
+    app: "kubedb"
+    release: "kubedb-catalog"
     heritage: "Helm"
 spec: #same spec as db
   privileged: false

@@ -4,28 +4,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: RELEASE-NAME-kubedb
-  namespace: default
+  name: kubedb
+  namespace: flux
   labels:
     chart: "kubedb-0.12.0"
     app: "kubedb"
-    release: "RELEASE-NAME"
+    release: "kubedb"
     heritage: "Helm"
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: "kubedb"
-      release: "RELEASE-NAME"
+      release: "kubedb"
   template:
     metadata:
       labels:
         chart: "kubedb-0.12.0"
         app: "kubedb"
-        release: "RELEASE-NAME"
+        release: "kubedb"
         heritage: "Helm"
     spec:
-      serviceAccountName: RELEASE-NAME-kubedb
+      serviceAccountName: kubedb
       containers:
       - name: operator
         image: kubedb/operator:0.12.0
@@ -79,7 +79,7 @@ spec:
       - name: serving-cert
         secret:
           defaultMode: 420
-          secretName: RELEASE-NAME-kubedb-apiserver-cert
+          secretName: kubedb-apiserver-cert
       nodeSelector:
         beta.kubernetes.io/arch: amd64
         beta.kubernetes.io/os: linux

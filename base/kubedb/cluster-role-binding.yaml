@@ -3,17 +3,17 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: RELEASE-NAME-kubedb
+  name: kubedb
   labels:
     chart: "kubedb-0.12.0"
     app: "kubedb"
-    release: "RELEASE-NAME"
+    release: "kubedb"
     heritage: "Helm"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: RELEASE-NAME-kubedb
+  name: kubedb
 subjects:
 - kind: ServiceAccount
-  name: RELEASE-NAME-kubedb
-  namespace: default
+  name: kubedb
+  namespace: flux
