@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/component: "webhook"
     helm.sh/chart: cert-manager-v0.16.1
   annotations:
-    cert-manager.io/inject-ca-from-secret: "flux/cert-manager-webhook-ca"
+    cert-manager.io/inject-ca-from-secret: "cert-manager/cert-manager-webhook-ca"
 webhooks:
   - name: webhook.cert-manager.io
     rules:
@@ -32,5 +32,5 @@ webhooks:
     clientConfig:
       service:
         name: cert-manager-webhook
-        namespace: "flux"
+        namespace: "cert-manager"
         path: /mutate

@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cert-manager-cainjector
-  namespace: "flux"
+  namespace: "cert-manager"
   labels:
     app: cainjector
     app.kubernetes.io/name: cainjector

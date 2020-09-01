@@ -52,7 +52,7 @@ roleRef:
   name: cert-manager-cainjector
 subjects:
   - name: cert-manager-cainjector
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/cainjector-rbac.yaml
@@ -105,4 +105,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: cert-manager-cainjector
-    namespace: flux
+    namespace: cert-manager

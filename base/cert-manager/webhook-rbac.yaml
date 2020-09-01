@@ -4,7 +4,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: Role
 metadata:
   name: cert-manager-webhook:dynamic-serving
-  namespace: "flux"
+  namespace: "cert-manager"
   labels:
     app: webhook
     app.kubernetes.io/name: webhook
@@ -28,7 +28,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: RoleBinding
 metadata:
   name: cert-manager-webhook:dynamic-serving
-  namespace: "flux"
+  namespace: "cert-manager"
   labels:
     app: webhook
     app.kubernetes.io/name: webhook
@@ -44,4 +44,4 @@ subjects:
 - apiGroup: ""
   kind: ServiceAccount
   name: cert-manager-webhook
-  namespace: flux
+  namespace: cert-manager

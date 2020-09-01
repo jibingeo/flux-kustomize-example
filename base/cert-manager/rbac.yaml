@@ -276,7 +276,7 @@ roleRef:
   name: cert-manager-controller-issuers
 subjects:
   - name: cert-manager
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/rbac.yaml
@@ -297,7 +297,7 @@ roleRef:
   name: cert-manager-controller-clusterissuers
 subjects:
   - name: cert-manager
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/rbac.yaml
@@ -318,7 +318,7 @@ roleRef:
   name: cert-manager-controller-certificates
 subjects:
   - name: cert-manager
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/rbac.yaml
@@ -339,7 +339,7 @@ roleRef:
   name: cert-manager-controller-orders
 subjects:
   - name: cert-manager
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/rbac.yaml
@@ -360,7 +360,7 @@ roleRef:
   name: cert-manager-controller-challenges
 subjects:
   - name: cert-manager
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/rbac.yaml
@@ -381,7 +381,7 @@ roleRef:
   name: cert-manager-controller-ingress-shim
 subjects:
   - name: cert-manager
-    namespace: "flux"
+    namespace: "cert-manager"
     kind: ServiceAccount
 ---
 # Source: cert-manager/templates/rbac.yaml
@@ -430,4 +430,4 @@ subjects:
   - apiGroup: ""
     kind: ServiceAccount
     name: cert-manager
-    namespace: flux
+    namespace: cert-manager

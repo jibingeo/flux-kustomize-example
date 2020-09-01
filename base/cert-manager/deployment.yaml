@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cert-manager
-  namespace: "flux"
+  namespace: "cert-manager"
   labels:
     app: cert-manager
     app.kubernetes.io/name: cert-manager
