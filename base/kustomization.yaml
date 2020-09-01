@@ -5,6 +5,7 @@ resources:
 - podinfo-hpa.yaml
 - podinfo-svc.yaml
 - demo-ns.yaml
-- kubedb/
-- kubedb-catalog/
-- cert-manager/
+- kubedb
+- kubedb-catalog
+- cert-manager
+- traefik
