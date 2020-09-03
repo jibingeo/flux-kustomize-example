@@ -197,24 +197,3 @@ spec:
         name: data
       - emptyDir: {}
         name: tmp
----
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
-metadata:
-  annotations:
-    helm.sh/hook: post-install,post-upgrade
-  labels:
-    app.kubernetes.io/instance: traefik
-    app.kubernetes.io/managed-by: Tiller
-    app.kubernetes.io/name: traefik
-    helm.sh/chart: traefik-9.1.0
-  name: traefik-dashboard
-spec:
-  entryPoints:
-  - traefik
-  routes:
-  - kind: Rule
-    match: PathPrefix(`/dashboard`) || PathPrefix(`/api`)
-    services:
-    - kind: TraefikService
-      name: api@internal
