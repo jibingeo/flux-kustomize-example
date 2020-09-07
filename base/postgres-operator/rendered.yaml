@@ -249,6 +249,7 @@ data:
   connection_pooler_image: registry.opensource.zalan.do/acid/pgbouncer:master-9
   db_hosted_zone: db.example.com
   debug_logging: "true"
+  delete_annotation_name_key: delete-clustername
   docker_image: registry.opensource.zalan.do/acid/spilo-12:1.6-p3
   enable_master_load_balancer: "false"
   enable_replica_load_balancer: "false"
