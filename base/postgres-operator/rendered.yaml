@@ -711,6 +711,7 @@ configuration:
   docker_image: registry.opensource.zalan.do/acid/spilo-12:1.6-p3
   etcd_host: ""
   kubernetes:
+    delete_annotation_name_key: delete-clustername
     cluster_domain: cluster.local
     cluster_labels:
       application: spilo
