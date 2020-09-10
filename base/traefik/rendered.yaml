@@ -142,7 +142,10 @@ spec:
         - --ping=true
         - --providers.kubernetescrd
         - --providers.kubernetesingress
-        image: traefik:2.2.8
+        - --experimental.pilot.token=$PILOT_TOKEN
+        - --experimental.plugins.demo.moduleName=github.com/containous/plugin-blockpath
+        - --experimental.plugins.demo.version=v0.1.2
+        image: traefik:2.3
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
