@@ -166,8 +166,6 @@ spec:
                 imagePullPolicy:
                   description: Image pull policy. One of Always, Never, IfNotPresent. This is applied to MinIO Console pods only. Refer Kubernetes documentation for details https://kubernetes.io/docs/concepts/containers/images#updating-images
                   type: string
-                metadata:
-                  type: object
                 replicas:
                   description: Replicas defines number of pods for KES StatefulSet.
                   format: int32
@@ -378,9 +376,6 @@ spec:
               - initialDelaySeconds
               - periodSeconds
               - timeoutSeconds
-              type: object
-            metadata:
-              description: Metadata defines the object metadata passed to each pod that is a part of this Tenant
               type: object
             mountPath:
               description: Mount path for MinIO volume (PV). Defaults to /export
@@ -1209,7 +1204,7 @@ spec:
         name: minio-operator
     spec:
       containers:
-      - image: minio/k8s-operator:v3.0.17
+      - image: minio/k8s-operator:v3.0.18
         imagePullPolicy: IfNotPresent
         name: minio-operator
         resources:
