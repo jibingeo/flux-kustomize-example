@@ -7,7 +7,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: (unknown)
+    controller-gen.kubebuilder.io/version: v0.4.0
   creationTimestamp: null
   name: tenants.minio.min.io
 spec:
@@ -63,6 +63,11 @@ spec:
               console:
                 description: ConsoleConfiguration is for setting up minio/console for graphical user interface
                 properties:
+                  annotations:
+                    additionalProperties:
+                      type: string
+                    description: If provided, use these annotations for Console Object Meta annotations
+                    type: object
                   consoleSecret:
                     description: This secret provides all environment variables for KES This is a mandatory field
                     properties:
@@ -166,6 +171,16 @@ spec:
                   imagePullPolicy:
                     description: Image pull policy. One of Always, Never, IfNotPresent. This is applied to MinIO Console pods only. Refer Kubernetes documentation for details https://kubernetes.io/docs/concepts/containers/images#updating-images
                     type: string
+                  labels:
+                    additionalProperties:
+                      type: string
+                    description: If provided, use these labels for Console Object Meta labels
+                    type: object
+                  nodeSelector:
+                    additionalProperties:
+                      type: string
+                    description: If provided, use these nodeSelector for Console Object Meta nodeSelector
+                    type: object
                   replicas:
                     description: Replicas defines number of pods for KES StatefulSet.
                     format: int32
@@ -321,6 +336,11 @@ spec:
               kes:
                 description: KES is for setting up minio/kes as MinIO KMS
                 properties:
+                  annotations:
+                    additionalProperties:
+                      type: string
+                    description: If provided, use these annotations for KES Object Meta annotations
+                    type: object
                   clientCertSecret:
                     description: ClientCertSecret allows a user to specify a custom root certificate, client certificate and client private key. This is used for adding client certificates on KES --> used for KES authentication against Vault or other KMS that supports mTLS.
                     properties:
@@ -354,7 +374,15 @@ spec:
                         description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?'
                         type: string
                     type: object
-                  metadata:
+                  labels:
+                    additionalProperties:
+                      type: string
+                    description: If provided, use these labels for KES Object Meta labels
+                    type: object
+                  nodeSelector:
+                    additionalProperties:
+                      type: string
+                    description: If provided, use these nodeSelector for KES Object Meta nodeSelector
                     type: object
                   replicas:
                     description: Replicas defines number of pods for KES StatefulSet.
