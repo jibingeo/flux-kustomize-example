@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/instance: traefik
     app.kubernetes.io/managed-by: Tiller
     app.kubernetes.io/name: traefik
-    helm.sh/chart: traefik-9.3.0
+    helm.sh/chart: traefik-9.4.0
   name: traefik
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -16,7 +16,7 @@ metadata:
     app.kubernetes.io/instance: traefik
     app.kubernetes.io/managed-by: Tiller
     app.kubernetes.io/name: traefik
-    helm.sh/chart: traefik-9.3.0
+    helm.sh/chart: traefik-9.4.0
   name: traefik
 rules:
 - apiGroups:
@@ -68,7 +68,7 @@ metadata:
     app.kubernetes.io/instance: traefik
     app.kubernetes.io/managed-by: Tiller
     app.kubernetes.io/name: traefik
-    helm.sh/chart: traefik-9.3.0
+    helm.sh/chart: traefik-9.4.0
   name: traefik
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -87,7 +87,7 @@ metadata:
     app.kubernetes.io/instance: traefik
     app.kubernetes.io/managed-by: Tiller
     app.kubernetes.io/name: traefik
-    helm.sh/chart: traefik-9.3.0
+    helm.sh/chart: traefik-9.4.0
   name: traefik
 spec:
   ports:
@@ -112,7 +112,7 @@ metadata:
     app.kubernetes.io/instance: traefik
     app.kubernetes.io/managed-by: Tiller
     app.kubernetes.io/name: traefik
-    helm.sh/chart: traefik-9.3.0
+    helm.sh/chart: traefik-9.4.0
   name: traefik
 spec:
   replicas: 1
@@ -132,7 +132,7 @@ spec:
         app.kubernetes.io/instance: traefik
         app.kubernetes.io/managed-by: Tiller
         app.kubernetes.io/name: traefik
-        helm.sh/chart: traefik-9.3.0
+        helm.sh/chart: traefik-9.4.0
     spec:
       containers:
       - args:
